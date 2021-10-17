@@ -125,10 +125,20 @@ void binary(int n)
 }
 int main()
 {
-    int option;
-    int n;
-    printf("Enter number\n");
-    scanf("%d", &n);
+    int option,n;
+    int n1;
+    int n2;
+    printf("Enter two number\n");
+    scanf("%d %d", &n1,&n2);
+    printf("Enter the type of operation \n1. Addition \n2. Multipilcation \n");
+    int opt;
+    scanf("%d",&opt);
+        if (opt == 1)
+            n = n1+n2;
+        if (opt == 2)
+            n = n1 * n2;
+
+    printf("\n");
     printf("Press 1 to convert to Hindu/Arabic number\nPress 2 to convert to Roman number\nPress 3 to convert to Unary number\nPress 4 to convert to Binary number\n");
     scanf("%d", &option);
     switch (option)
